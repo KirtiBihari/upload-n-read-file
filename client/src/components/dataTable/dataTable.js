@@ -41,7 +41,7 @@ const DataTable = (props) => {
                 <input type="text" value={lineVal} onChange={lineChangeHandler} />
             </div>
         </div>
-        {isRecordAvailable ? <table className="table">
+        {isRecordAvailable ? <table className="table table-bordered">
             <tbody>
                 { datalist.slice(0, noOfLine).map( (item, index) => (<tr key={index}>
                     { getSplitValuesUsingDelimiter(item).slice(0, noOfColumn).map((val, valIndex) => (<td key={valIndex}>{val}</td>)) }
