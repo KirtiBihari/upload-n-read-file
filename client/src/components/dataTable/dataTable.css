@@ -1,0 +1,15 @@
+.dataTableContainer .filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.dataTableContainer .filters label {
+  padding-right: 5px; 
+}
+.dataTableContainer .noRecords {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}

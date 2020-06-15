@@ -1,0 +1,16 @@
+#dropDiv {
+    height: 135px;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+}
+
+#dropDiv.highlight {
+    border-color: red;
+}
+
+.custom-file {
+    width: 96%;
+    margin: 5px;
+}

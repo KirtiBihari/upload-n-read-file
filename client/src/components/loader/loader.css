@@ -1,0 +1,52 @@
+.loader .backdrop {
+    background-color: #d0d0d0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    opacity: .5;
+  }
+  
+  .loader .spinner {
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+  
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid aliceblue;
+    border-right: 8px solid aliceblue;
+    border-bottom: 8px solid aliceblue;
+    border-left: 8px solid #8c618d;
+    border-radius: 50%;
+  
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      border-left:8px solid black;
+    }
+    100% {
+      transform: rotate(1440deg);
+      border-left:8px solid black;
+    }
+  
+  }
+  
+  .loader .logo {
+    position:absolute;
+    top:calc(50% + 35px);
+    left:calc(50% - 25px);
+    
+    font-family:sans-serif;
+    color: black;
+    letter-spacing:0.1em;
+  }
+  
